@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(20),
          color:Colors.cyan,
-         child: Text("My App"),
+         child: Text("My New App"),
          width: 400,
          height: 500,
          
