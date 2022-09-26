@@ -1,33 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/HomePage.dart';
+import 'package:flutter_application_1/pages/Login_Page.dart';
+import 'package:flutter_application_1/pages/Registration.dart';
 
 
 void main(){
   
   runApp(MaterialApp(
     title:"First App" ,
-    home: HomePage(),
-  ));
+    home: LoginPage(),
+   
+  )
+  );
   
-}
-class HomePage extends StatelessWidget {
-  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("new app"),
-      ),
-      body: Center(
-        child: Container(
-          padding: const EdgeInsets.all(20),
-         color:Colors.cyan,
-         child: Text("My New App"),
-         width: 400,
-         height: 500,
-         
-        )
-        ),
-    );
-  }
 }
