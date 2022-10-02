@@ -30,6 +30,7 @@ class _RegistrationState extends State<Registration> {
                          children: [
                           TextFormField(
                             decoration: InputDecoration(hintText: "Enter Username",labelText: "Username"),
+                            
                           ),
                           SizedBox(
                             height: 20,

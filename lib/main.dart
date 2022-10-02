@@ -1,50 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/HomePage.dart';
+import 'package:flutter_application_1/pages/Login_Page.dart';
 
 
-
-import 'package:firebase_core/firebase_core.dart';
-
-// void main(){
-// WidgetsFlutterBinding.ensureInitialized();
-  
-//   runApp(myapp());
-   
-  
-  
-// }
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  
- 
-  runApp(myapp());
+void main() {
+  runApp(SecondApp());
 }
-class myapp extends StatelessWidget {
-  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
+class SecondApp extends StatelessWidget {
+  const SecondApp({super.key});
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Scaffold(
-        appBar: AppBar(
-          title:Text('Hello'),
-        ),
-      body:FutureBuilder(
-        future: _initialization,
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return Center(
-              child: Text('Could not connected'+snapshot.error.toString()),
-            );
-          }
-          if (snapshot.connectionState == ConnectionState.done){
-            return Center(
-              child: Text('connected'),
-            );
-          }
-          return Center(child: CircularProgressIndicator(),);
-        }
-      ) ,
-      ) ,
+        home :LoginPage(),
     );
+    
   }
 }

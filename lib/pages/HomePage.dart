@@ -9,10 +9,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome App"),
+        title: Text("Welcome "),
       ),
-      body: Container(),
+      body: Center(
+        child: Container(
+          child: Image(image: AssetImage('assets/images.png')),
+        ),
+      ),
         drawer: MyDrawer(),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.edit),

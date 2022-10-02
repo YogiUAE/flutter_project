@@ -35,7 +35,8 @@ class _LoginPageState extends State<LoginPage> {
                       child: Column(
                          children: [
                           TextFormField(
-                            decoration: InputDecoration(hintText: "Enter Username",labelText: "Username"),
+                            decoration: InputDecoration(hintText: "Enter Username",labelText: "Username" ,),
+                            
                           ),
                           SizedBox(
                             height: 20,
